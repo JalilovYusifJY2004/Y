@@ -1,1 +1,244 @@
 Qudbay world
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop
+$ cd Yusif907
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907
+$ mkdir Main
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907
+$ cd Main
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main
+$ mkdir 'Learn Git'
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main
+$ cd Learn\Git/
+bash: cd: LearnGit/: No such file or directory
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main
+$ cd Learn\ Git/
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git
+$ mkdir Hello
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git
+$ cd Hello
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git/Hello
+$ touch world.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git/Hello
+$ cd world.txt
+bash: cd: world.txt: Not a directory
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git/Hello
+$ vim world.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git/Hello
+$ cat world.txt
+Hello world!
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git/Hello
+$ touch test.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git/Hello
+$ rmdir Hello
+rmdir: failed to remove 'Hello': No such file or directory
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git/Hello
+$ cd..
+bash: cd..: command not found
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git/Hello
+$ rmdir Hello
+rmdir: failed to remove 'Hello': No such file or directory
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git/Hello
+$ rmdir Hello/
+rmdir: failed to remove 'Hello/': No such file or directory
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git/Hello
+$ cd ..
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git
+$ rmdir Hello
+rmdir: failed to remove 'Hello': Directory not empty
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git
+$ rmdir Hello/
+rmdir: failed to remove 'Hello/': Directory not empty
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git
+$ rm -r Hello
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git
+$ touch First.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git
+$ cd First.txt
+bash: cd: First.txt: Not a directory
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git
+$ cd First.txt
+bash: cd: First.txt: Not a directory
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git
+$ vim First.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git
+$ cat First.txt
+Qudbay world
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git
+$ git init
+Initialized empty Git repository in C:/Users/ca.r214.15/Desktop/Yusif907/Main/Learn Git/.git/
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git add First.txt
+warning: in the working copy of 'First.txt', LF will be replaced by CRLF the next time Git touches it
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   First.txt
+
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git commit -m "added First.txt File"
+[master (root-commit) 1ef0a81] added First.txt File
+ 1 file changed, 1 insertion(+)
+ create mode 100644 First.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git remote add origin https://github.com/JalilovYusifJY2004/Y.git
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/JalilovYusifJY2004/Y.git'
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git push -u origin Main
+error: src refspec Main does not match any
+error: failed to push some refs to 'https://github.com/JalilovYusifJY2004/Y.git'
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git push -u origin master
+
+
+
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 236 bytes | 236.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JalilovYusifJY2004/Y.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 664 bytes | 73.00 KiB/s, done.
+From https://github.com/JalilovYusifJY2004/Y
+   1ef0a81..34b8096  master     -> origin/master
+Updating 1ef0a81..34b8096
+Fast-forward
+ Yusif.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Yusif.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ touch yus1.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ touch yus2.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ touch yus3.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ vim yus1.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ vim yus2.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ vim yus3.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git add yus1.txt
+warning: in the working copy of 'yus1.txt', LF will be replaced by CRLF the next time Git touches it
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ vim  yus1.txt \
+> ^C
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ vim yus1.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git diff
+warning: in the working copy of 'yus1.txt', LF will be replaced by CRLF the next time Git touches it
+diff --git a/yus1.txt b/yus1.txt
+index 9d0528a..c5af00a 100644
+--- a/yus1.txt
++++ b/yus1.txt
+@@ -1 +1 @@
+-salam
++saqol
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git add yus1.txt
+warning: in the working copy of 'yus1.txt', LF will be replaced by CRLF the next time Git touches it
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   yus1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        yus2.txt
+        yus3.txt
+
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git commit -m "yus1.txt"
+[master afbbc0e] yus1.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 yus1.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JalilovYusifJY2004/Y.git
+   34b8096..afbbc0e  master -> master
+branch 'master' set up to track 'origin/master'.
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/Yusif907/Main/Learn Git (master)
+$
