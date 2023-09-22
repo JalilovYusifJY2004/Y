@@ -76,3 +76,201 @@ branch 'master' set up to track 'origin/master'.
 
 ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
 $ \
+task 4ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop (master)
+$ cd ne
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git init
+Initialized empty Git repository in C:/Users/ca.r214.15/Desktop/ne/.git/
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ touch 1.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git add .
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git commit -m "1.txt"
+[master (root-commit) 31825fe] 1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ touch 2.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git add .
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git commit -m "2.txt"
+[master 5cb36ae] 2.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ touch 3.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git add .
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git commit -m "3.txt"
+[master 4e6e7a8] 3.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ touch 4.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git add .
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git commit -m "4.txt"
+[master f9a319f] 4.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 4.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ touch 5.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git add .
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git commit -m "5.txt"
+[master 4e6d4cf] 5.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 5.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git log
+commit 4e6d4cf78a30c49f14134f7482fbf8348ab79550 (HEAD -> master)
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:08:00 2023 +0400
+
+    5.txt
+
+commit f9a319f495cab6598d35f2b70a85c2096c3f9467
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:07:28 2023 +0400
+
+    4.txt
+
+commit 4e6e7a828558a3c152a074ac99f47b085013477d
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:06:58 2023 +0400
+
+    3.txt
+
+commit 5cb36ae5b25c015dee8b624a3c63eb3ba80b72d8
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:06:21 2023 +0400
+
+    2.txt
+
+commit 31825fe76a6a5eb922623777563f25baa1f1855f
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:05:57 2023 +0400
+
+    1.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git reset --mixed f9a319f495cab6598d35f2b70a85c2096c3f9467
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git log
+commit f9a319f495cab6598d35f2b70a85c2096c3f9467 (HEAD -> master)
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:07:28 2023 +0400
+
+    4.txt
+
+commit 4e6e7a828558a3c152a074ac99f47b085013477d
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:06:58 2023 +0400
+
+    3.txt
+
+commit 5cb36ae5b25c015dee8b624a3c63eb3ba80b72d8
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:06:21 2023 +0400
+
+    2.txt
+
+commit 31825fe76a6a5eb922623777563f25baa1f1855f
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:05:57 2023 +0400
+
+    1.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        5.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git reset --hard 4e6e7a828558a3c152a074ac99f47b085013477d
+HEAD is now at 4e6e7a8 3.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git log
+commit 4e6e7a828558a3c152a074ac99f47b085013477d (HEAD -> master)
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:06:58 2023 +0400
+
+    3.txt
+
+commit 5cb36ae5b25c015dee8b624a3c63eb3ba80b72d8
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:06:21 2023 +0400
+
+    2.txt
+
+commit 31825fe76a6a5eb922623777563f25baa1f1855f
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:05:57 2023 +0400
+
+    1.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        5.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git reset --soft  31825fe76a6a5eb922623777563f25baa1f1855f
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git log
+commit 31825fe76a6a5eb922623777563f25baa1f1855f (HEAD -> master)
+Author: faridmustafazade <mustafazadefaridm@gmail.com>
+Date:   Fri Sep 22 13:05:57 2023 +0400
+
+    1.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   2.txt
+        new file:   3.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        5.txt
+
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/ne (master)
+$
+
+
