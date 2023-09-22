@@ -1,1 +1,78 @@
 saqol
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop (master)
+$ cd task3
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
+$ touch task3.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
+$ git init
+Initialized empty Git repository in C:/Users/ca.r214.15/Desktop/task3/.git/
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
+$ git add .
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
+$ git commit -m "task3.txt added"
+[master (root-commit) df3924c] task3.txt added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 task3.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
+$ git remote add origin https://github.com/JalilovYusifJY2004/task3.git
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JalilovYusifJY2004/task3.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
+$ git branch task3
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
+$ git checkout task3
+Switched to branch 'task3'
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (task3)
+$ git pull origin task3
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 652 bytes | 108.00 KiB/s, done.
+From https://github.com/JalilovYusifJY2004/task3
+ * branch            task3      -> FETCH_HEAD
+ * [new branch]      task3      -> origin/task3
+Updating df3924c..5fab4c2
+Fast-forward
+ task33 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 task33
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (task3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
+$ git merge task3
+Updating df3924c..5fab4c2
+Fast-forward
+ task33 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 task33
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
+$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JalilovYusifJY2004/task3.git
+   df3924c..5fab4c2  master -> master
+branch 'master' set up to track 'origin/master'.
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/task3 (master)
+$ \
