@@ -1,1 +1,73 @@
 Jalilov 
+Initialized empty Git repository in C:/Users/ca.r214.15/Desktop/test111/.git/
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (master)
+$ git add .
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (master)
+$ git commit -m "1.txt"
+[master (root-commit) 9e80933] 1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (master)
+$ git branch dev
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (dev)
+$ touch 2.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (dev)
+$ touch 3.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (dev)
+$ git commit -m "2.txt"
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.txt
+        3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (dev)
+$ git init
+Reinitialized existing Git repository in C:/Users/ca.r214.15/Desktop/test111/.git/
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (dev)
+$ git add .
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (dev)
+$ git commit -m "2.txt 3.txt added"
+[dev 8061239] 2.txt 3.txt added
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.txt
+ create mode 100644 3.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (dev)
+$ git checkout master
+Switched to branch 'master'
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (master)
+$ git merge dev
+Updating 9e80933..8061239
+Fast-forward
+ 2.txt | 0
+ 3.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.txt
+ create mode 100644 3.txt
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (master)
+$
