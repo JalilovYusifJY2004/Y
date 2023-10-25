@@ -71,3 +71,90 @@ and the repository exists.
 
 ca.r214.15@CA-R214-PC15 MINGW64 ~/Desktop/test111 (master)
 $
+ghjj
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using Newtonsoft.Json;
+
+public class Book
+{
+    public string Id { get; set; }
+    public string Name { get; set; }
+    public string Author { get; set; }
+    public int Year { get; set; }
+}
+
+public class DbStore
+{
+    private List<Book> ReadFromDb()
+    {
+        if (File.Exists("Files/books.json"))
+        {
+            string json = File.ReadAllText("Files/books.json");
+            return JsonConvert.DeserializeObject<List<Book>>(json);
+        }
+        return new List<Book>();
+    }
+
+    private void WriteToDb(List<Book> books)
+    {
+        string json = JsonConvert.SerializeObject(books, Formatting.Indented);
+        File.WriteAllText("Files/books.json", json);
+    }
+
+    public void Add(Book book)
+    {
+        List<Book> books = ReadFromDb();
+        book.Id = Guid.NewGuid().ToString();
+        books.Add(book);
+        WriteToDb(books);
+    }
+
+    public void AddRange(List<Book> books)
+    {
+        List<Book> existingBooks = ReadFromDb();
+        foreach (var book in books)
+        {
+            book.Id = Guid.NewGuid().ToString();
+            existingBooks.Add(book);
+        }
+        WriteToDb(existingBooks);
+    }
+
+    public void Remove(string id)
+    {
+        List<Book> books = ReadFromDb();
+        Book bookToRemove = books.FirstOrDefault(b => b.Id == id);
+        if (bookToRemove != null)
+        {
+            books.Remove(bookToRemove);
+            WriteToDb(books);
+        }
+    }
+
+    public void Update(string id, Book updatedBook)
+    {
+        List<Book> books = ReadFromDb();
+        Book bookToUpdate = books.FirstOrDefault(b => b.Id == id);
+        if (bookToUpdate != null)
+        {
+            bookToUpdate.Name = updatedBook.Name;
+            bookToUpdate.Author = updatedBook.Author;
+            bookToUpdate.Year = updatedBook.Year;
+            WriteToDb(books);
+        }
+    }
+
+    public Book ShowBook(string id)
+    {
+        List<Book> books = ReadFromDb();
+        return books.FirstOrDefault(b => b.Id == id);
+    }
+
+    public List<Book> ShowAllBooks()
+    {
+        return ReadFromDb();
+    }
+}
